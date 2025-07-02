@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #382bac url('/photo-1597773150796-e5c14ebecbf5.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+   
+}
+body {
+    width: 100%;
+    height: 100dvh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+}
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of hands */
+}
+.hand {
+    width: 50%;
+    height: 6px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 3.27, 0.58, 1);
+}
+
+.number {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+
+  font-family: "Bitcount Grid Double", system-ui;
+  font-size: 4rem;
+}
+
+.number3  { transform: rotate(351deg)  translate(520%) rotate(8deg); }
+.number6  { transform: rotate(96deg) translate(480%) rotate(266deg); }
+.number9  { transform: rotate(189deg) translate(640%) rotate(171deg); }
+ .number12 { transform: rotate(260deg)   translate(650%) rotate(100deg);   } 
